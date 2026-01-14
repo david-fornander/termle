@@ -1,6 +1,6 @@
 [project]
-name = "termsearch"
+name = "termle"
 version = "0.1.0"
 
 [project.scripts]
-termsearch = "app.cli:main"
+termle = "app.cli:main"

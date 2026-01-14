@@ -1,9 +1,0 @@
-pyproject.toml
-app/cli.py
-app/commands/__init__.py
-app/commands/google.py
-termsearch.egg-info/PKG-INFO
-termsearch.egg-info/SOURCES.txt
-termsearch.egg-info/dependency_links.txt
-termsearch.egg-info/entry_points.txt
-termsearch.egg-info/top_level.txt

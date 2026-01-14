@@ -12,7 +12,7 @@ def main():
     cmd = sys.argv[1]
 
     if cmd == "search":
-        search_command.run(sys.argv[2])
+        search_command.run(" ".join(sys.argv[2:]))
 
 
 if __name__ == "__main__":
