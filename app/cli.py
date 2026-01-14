@@ -2,7 +2,7 @@
 import sys
 import importlib.resources as res
 
-from app.commands import search as search_command
+from app.commands import browse as browse_command
 
 def main():
 
@@ -12,14 +12,13 @@ def main():
 
     args = sys.argv
     flag = flag_check(args)
-    print(flag)
     cmd = args[1]
 
-    if cmd == "search":
-        search_command.run(flag, args[2:])
+    if cmd == "browse":
+        browse_command.run(flag, args[2:])
 
     else:
-        search_command.run(flag, args[1:])
+        browse_command.run(flag, args[1:])
 
 
 def flag_check(args):
