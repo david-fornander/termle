@@ -1,8 +1,6 @@
 import webbrowser
 
 def run(flag, search_string):
-    print(f"Searching for: \"{" ".join(search_string)}\"")
-
     if flag == "t" or flag == None:
         webbrowser.open_new_tab("https://www.google.se/search?q=" + "+".join(search_string))
     elif flag == "n":
