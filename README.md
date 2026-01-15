@@ -3,3 +3,8 @@
 __To install__
 
 ```pip install git+https://github.com/david-fornander/termle.git```
+
+
+__To update__
+
+```pip install --upgrade git+https://github.com/david-fornander/termle.git```
