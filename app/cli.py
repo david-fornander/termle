@@ -11,21 +11,23 @@ def main():
         return
 
     args = sys.argv
-    flag = flag_check(args)
+    flags = flag_check(args)
     cmd = args[1]
 
     if cmd == "browse":
-        browse_command.run(flag, args[2:])
+        browse_command.run(flags, args[2:])
 
     else:
-        browse_command.run(flag, args[1:])
+        browse_command.run(flags, args[1:])
 
 
 def flag_check(args):
+    flags = []
     for arg in args:
         if "-" in arg:
+            flags.append(arg[1:])
             args.remove(arg)
-            return arg[1:]
+    return flags
 
 
 if __name__ == "__main__":
