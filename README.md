@@ -1,4 +1,4 @@
-# A cli-command to easily search the web via the terminal and to get definitions of words and to translate them from English to Swedish
+# A cli-command to easily search the web via the terminal and to get definitions of words and to translate them between English to Swedish
 
 __To install__
 

@@ -25,10 +25,10 @@ def main():
 
 def flag_check(args):
     flags = []
-    for arg in args:
-        if "-" in arg:
-            flags.append(arg[1:])
-            args.remove(arg)
+    for i in range(len(args) - 1, 0, -1):
+        if "-" in args[i]:
+            flags.append(args[i][1:])
+            args.remove(args[i])
     return flags
 
 
