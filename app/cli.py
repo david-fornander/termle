@@ -1,8 +1,8 @@
 
 import sys
-import importlib.resources as res
 
 from app.commands import browse as browse_command
+from app.commands import word as word_command
 
 def main():
 
@@ -11,14 +11,16 @@ def main():
         return
 
     args = sys.argv
+    args = args[1:] # Removes termle as a command which has a "-" in it int the path
     flags = flag_check(args)
-    cmd = args[1]
+    cmd = args[0]
 
     if cmd == "browse":
-        browse_command.run(flags, args[2:])
-
-    else:
         browse_command.run(flags, args[1:])
+    elif cmd == "word":
+        word_command.run(flags, args[1:])
+    else:
+        browse_command.run(flags, args[0:])
 
 
 def flag_check(args):
