@@ -26,7 +26,7 @@ def main():
 def flag_check(args):
     flags = []
     for i in range(len(args) - 1, -1, -1):
-        if "-" in args[i]:
+        if args[i][0] == "-":
             flags.append(args[i][1:])
             args.remove(args[i])
     return flags
