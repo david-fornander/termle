@@ -13,6 +13,9 @@ dependencies = [
     "deep-translator"
 ]
 
+[project.scripts]
+termle = "app.main:main"
+
 [tool.setuptools]
 package-dir = {"" = "."}
 
