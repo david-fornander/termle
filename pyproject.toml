@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-termle = "app.main:main"
+termle = "app.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "."}
